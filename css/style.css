@@ -29,7 +29,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; }
 
 /* ---------- Header / nav ---------- */
@@ -175,12 +175,16 @@ a { color: inherit; }
 }
 .card { text-decoration: none; display: block; }
 .card .ph, .card img { --ratio: 437 / 320; transition: opacity 0.2s; }
+.card img { width: 100%; aspect-ratio: 437 / 320; object-fit: cover; }
 .card:hover .ph, .card:hover img { opacity: 0.75; }
 .card h3 { margin: 10px 0 2px; font-size: 20px; font-weight: 500; }
 .card p { margin: 0; font-size: 15px; color: var(--muted); }
 .card .summary { margin-top: 6px; color: var(--ink); font-weight: 300; }
 
 /* ---------- Case study ---------- */
+
+.showcase { padding: 48px var(--gutter) 0; }
+.showcase img { max-height: 720px; width: auto; margin: 0 auto; }
 
 .full-bleed { margin: 0 calc(-1 * var(--gutter)); }
 .full-bleed .ph { --ratio: 1440 / 800; }
