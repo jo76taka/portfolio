@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>myPOMO — Josuke Takashima</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../projects.html" aria-current="page">Project</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+    <div class="page-title">
+      <h1>myPOMO</h1>
+      <p>An auto-scheduling app that turns free time into focused work.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="full-bleed" style="margin: 0;"><div class="ph">Hero: 3–5 app screens, full-bleed</div></div>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="statement">Built from 818 survey responses and 57 pieces of beta feedback, myPOMO plans your day so you can spend it working, not planning.</p>
+        <ul class="meta">
+          <li>Role: Founder &amp; Lead Designer</li>
+          <li>Team: 15 members</li>
+          <li><span class="todo">[Year]</span> – present · Figma, Flutter, Notion</li>
+          <li>National Grand Prix, National PC Olympiad 2022</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">The Problem:</p>
+        <h2>It's Not a Lack of Time. It's Not Using It.</h2>
+        <p class="lead">In our pre-beta survey of working adults, most said they have free time but can't turn it into work.</p>
+        <div class="stats">
+          <div class="stat"><strong>85%</strong><span>can't make good use of their free time</span></div>
+          <div class="stat"><strong>39%</strong><span>say they have no free time at all</span></div>
+        </div>
+        <p class="note">Pre-beta survey, first analysis n = 584 (working adults n = 132, Nov 2025). Total responses now 818.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Pain Points:</p>
+        <h2>Where Time Slips Away</h2>
+        <div class="list">
+          <div><h3>Procrastination — 88%</h3><p>Most put tasks off until the deadline. 42 people named it their single biggest problem.</p></div>
+          <div><h3>Plans That Don't Hold — 85%</h3><p>Even after making a plan, people can't follow it.</p></div>
+          <div><h3>Planning Itself — 63%</h3><p>Many can't make a plan in the first place.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Insight:</p>
+        <h2>Planning Is the Burden</h2>
+        <p class="lead">People don't fail for lack of time or motivation. They stall at deciding what to do and when. myPOMO takes that decision off their hands: it builds the schedule automatically from free time and deadlines, using the Pomodoro Technique.</p>
+        <div class="ph" style="--ratio: 1210 / 680; margin-top: 64px;">Diagram: free time + deadlines → auto-generated schedule</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Process:</p>
+        <h2>Ask, Build, Listen, Redesign</h2>
+        <p class="lead">Each version started from what users told us. A survey found the problem, a beta tested the core idea, and post-beta feedback shaped the launch.</p>
+        <div class="steps">
+          <div><span class="num">01 Pre-beta survey</span><strong>818</strong><p>responses on where people struggle</p></div>
+          <div><span class="num">02 Beta release</span><strong>β</strong><p>tested auto-scheduling + focus timer</p></div>
+          <div><span class="num">03 Feedback</span><strong>57</strong><p>requests and bug reports from users</p></div>
+          <div><span class="num">04 Synthesis</span><strong>15</strong><p>design areas · 49 addressed, 8 set aside</p></div>
+        </div>
+
+        <div class="compare">
+          <h3>From Feedback to Design</h3>
+          <div class="compare-row head"><span>What users said</span><span>Design response (for launch)</span></div>
+          <div class="compare-row"><span>"We rarely follow the plan exactly. Let us adjust it by tapping."</span><span>Drag-and-drop editing of the generated schedule, so the plan stays a guide, not a rule.</span></div>
+          <div class="compare-row"><span>"Why did the app schedule it this way?"</span><span>A short explanation of each schedule, so users can trust and adjust it.</span></div>
+          <div class="compare-row"><span>Work "starts and ends without a clear edge."</span><span>Check-in and check-out moments that frame each focus session.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Evolution:</p>
+        <h2>From a Timer to a Study Partner</h2>
+        <p class="lead">Version 1 was a flat orange timer and task list. By Version 3, it had grown into a full loop: a schedule built for you, a focused timer, and reports for reflection.</p>
+        <div class="pair">
+          <figure><div class="ph">Version 1 screens</div><figcaption>Version 1</figcaption></figure>
+          <figure><div class="ph">Version 3 screens</div><figcaption>Version 3</figcaption></figure>
+        </div>
+        <figure style="margin-top: 16px;">
+          <div class="ph" style="--ratio: 1210 / 520;">Logo exploration → final mark</div>
+          <figcaption>Logo exploration, including notes on how users treat home-screen icons</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Features:</p>
+        <h2>Schedules That Build Themselves</h2>
+        <p class="lead">Enter tasks and deadlines once. myPOMO fits them into your free time and reschedules when plans change.</p>
+        <div class="pair"><div class="ph">Schedule screen (1)</div><div class="ph">Schedule screen (2)</div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Features:</p>
+        <h2>A Timer That Keeps You in Focus</h2>
+        <p class="lead">Pomodoro sessions with clear starts and breaks, showing what comes next so there is nothing to decide.</p>
+        <div class="pair"><div class="ph">Timer screen (1)</div><div class="ph">Timer screen (2)</div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Features:</p>
+        <h2>Reports That Close the Loop</h2>
+        <p class="lead">Daily and weekly reports show what you achieved, and a short review sets up tomorrow.</p>
+        <div class="pair"><div class="ph">Report &amp; review screen (1)</div><div class="ph">Report &amp; review screen (2)</div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Outcome &amp; Next:</p>
+        <h2>Recognized Nationally. Now Proving It Works.</h2>
+        <div class="list">
+          <div><h3>Award</h3><p>National Grand Prix, <span class="todo">[competition name] ([year])</span>, for the high school version of myPOMO.</p></div>
+          <div><h3>Next</h3><p>After launch, a follow-up survey will test the core claim: do users start tasks earlier and use more of their free time?</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Josuke Takashima</span>
+    <a class="next" href="european-football.html">Next Project →</a>
+  </footer>
+</body>
+</html>
