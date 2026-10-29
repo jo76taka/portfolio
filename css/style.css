@@ -267,3 +267,13 @@ figcaption { font-size: 14px; color: var(--muted); margin-top: 10px; }
 .site-footer a { text-decoration: none; }
 .site-footer a:hover { color: var(--ink); }
 .site-footer .next { color: var(--ink); font-size: 18px; }
+
+.phones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(24px, 5vw, 64px);
+  margin-top: 48px;
+}
+.phones figure { width: min(100%, 300px); text-align: center; }
+.phones img { width: 100%; }
