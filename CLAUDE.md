@@ -32,7 +32,11 @@
 - Role: Co-founder / Design & Marketing Lead
 - Pre-beta survey: 818 responses; ran a beta; post-beta feedback compiled into
   a feature list for the main release
-- Won 1st and 3rd place in national app development competitions
+- Won 1st and 3rd place in national app development competitions:
+  パソコン甲子園 2022 (PC Koshien) — 1st place; アプリ甲子園 2023 (App Koshien) — 3rd place
+- Started 2022. Target users: mainly students who have things they want to work on
+  but can't manage their time to take them on; secondarily adults in the same situation
+- Josuke designed the UI/UX himself; feedback analysis was done as the marketing team
 - Not yet released → no in-app usage data; frame impact through research process
 - Make individual contribution clear without downplaying the team
 
@@ -43,7 +47,12 @@
   data visualization (scatterplots, regression, deviation scores in Chart.js)
   and conceptual framing (Bayes' rule, anchoring bias, overconfidence)
 - Shiny dashboard: competitive balance across Top 5 European football leagues
-  (Gini coefficient, title race gap)
+  (Gini coefficient, title race gap). Solo, published Mar 2026; seasons 2014/15–2024/25;
+  5 metrics (CV & Gini of points, title / UCL (4th–5th) / relegation gaps);
+  metric dropdown + season slider; line plot + cross-league bar chart.
+  Findings: CV and Gini rank leagues almost identically; PL has had the smallest title gap
+  over the last 5 seasons; PL relegation gap far larger than other leagues;
+  La Liga shows a two-tier structure
 - Kaggle projects: Airbnb price prediction (LightGBM), on-time delivery
   classification (feature engineering, target encoding)
 
@@ -70,7 +79,9 @@
   Claude-drafted sections. Treat Josuke's own design choices as the reference.
 
 ## Tech stack (decided)
-- Plain HTML/CSS, no build step; font: Jost (Futura substitute, Google Fonts)
+- Plain HTML/CSS, no build step; font: Futura PT via Adobe Fonts (kit qah4mdm, weights
+  300/400/500 + italics; jo76taka.github.io must be on the kit's allowed domains),
+  with Jost (Google Fonts) kept as fallback
 - Hosting: GitHub Pages (account jo76taka)
 - Pages: index / projects / about (incl. skills + interests) / contact, projects/*.html
 - `.ph` = image placeholder, `.todo` = highlighted text still to confirm

@@ -9,7 +9,7 @@
   --placeholder: #ecece9;
   --bg: #ffffff;
   --accent: #003a5c;
-  --font: "Jost", "Futura", "Futura PT", "Avenir Next", system-ui, sans-serif;
+  --font: "futura-pt", "Jost", "Futura", "Avenir Next", system-ui, sans-serif;
   --content: 980px;
   --text: 640px;
   --gutter: clamp(16px, 5.7vw, 82px);
