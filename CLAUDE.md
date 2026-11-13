@@ -50,9 +50,13 @@
   (Gini coefficient, title race gap). Solo, published Mar 2026; seasons 2014/15–2024/25;
   5 metrics (CV & Gini of points, title / UCL (4th–5th) / relegation gaps);
   metric dropdown + season slider; line plot + cross-league bar chart.
-  Findings: CV and Gini rank leagues almost identically; PL has had the smallest title gap
-  over the last 5 seasons; PL relegation gap far larger than other leagues;
-  La Liga shows a two-tier structure
+  STAT 302 final project (Winter 2026). Live app: https://jotakanu.shinyapps.io/App-1/ Source notes: Additional_Information.qmd in the
+  STAT302/shiny_labs/Josuke_Takashima_Final Drive folder.
+  Findings: CV and Gini rank leagues almost identically; La Liga had a small title gap early,
+  PL the smallest over the last 5 seasons; La Liga & Ligue 1 have larger UCL (4th–5th) gaps;
+  PL relegation gap far larger than other leagues; La Liga two-tier = top clubs compete
+  closely among themselves (small title gap, large UCL gap), rest evenly matched below
+  (small relegation gap except 2017/18)
 - Kaggle projects: Airbnb price prediction (LightGBM), on-time delivery
   classification (feature engineering, target encoding)
 

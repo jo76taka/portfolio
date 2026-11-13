@@ -20,21 +20,24 @@
     </nav>
     <div class="page-title">
       <h1>European Football Competitiveness</h1>
-      <p class="todo">[One-line summary: what it is and who it is for]</p>
+      <p>An interactive dashboard comparing how competitive Europe's top five leagues have been, season by season.</p>
     </div>
   </header>
 
   <main>
-    <div class="full-bleed" style="margin: 0;"><div class="ph">Hero image</div></div>
+    <div class="showcase">
+      <img src="../images/european-football/overview.jpg" alt="Dashboard showing the coefficient of variation of points for five leagues from 2014/15 to 2024/25, with a line chart over time and a bar chart of averages" width="2880" height="1622">
+    </div>
 
     <section class="section">
       <div class="wrap">
-        <p class="statement todo">[Key message of this project in one or two sentences]</p>
+        <p class="statement">Who wins the league says little about how competitive it is. This dashboard splits competitiveness into five measures, from the spread of the whole table to the title race, the Champions League places, and the relegation fight, so leagues can be compared on more than one number.</p>
         <ul class="meta">
-          <li>Category: Data · Information Design</li>
-          <li>Role: <span class="todo">[Role]</span></li>
-          <li>Team: <span class="todo">[Team size]</span></li>
-          <li><span class="todo">[Year] · [Tools]</span></li>
+          <li>Data Visualization · Statistics</li>
+          <li>Role: Data processing, metric design, dashboard design &amp; build</li>
+          <li>Solo · Final project, STAT 302 (Northwestern), Winter 2026</li>
+          <li>2026 · R, Shiny, tidyverse, bslib</li>
+          <li><a href="https://jotakanu.shinyapps.io/App-1/" target="_blank" rel="noopener">Open the live dashboard ↗</a></li>
         </ul>
       </div>
     </section>
@@ -42,35 +45,81 @@
     <section class="section">
       <div class="wrap">
         <p class="label">The Problem:</p>
-        <h2 class="todo">[Problem headline]</h2>
-        <p class="lead todo">[What was wrong, for whom, and why it matters]</p>
+        <h2>"Most Competitive" Is Usually a Claim, Not a Measurement</h2>
+        <p class="lead">Arguments about which league is most competitive tend to rest on a single storyline, such as a close title race or a surprise champion. But a league has several contests running at once, at the top, in the middle, and at the bottom. One number, or one season, can hide where the real competition is.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <p class="label">Insight:</p>
-        <h2 class="todo">[Insight headline]</h2>
-        <p class="lead todo">[What research or data revealed]</p>
-        <div class="ph" style="--ratio: 16 / 9; margin-top: 48px;">Research / data visual</div>
+        <p class="label">Approach:</p>
+        <h2>Five Measures, Two Views of the Table</h2>
+        <p class="lead">I combined final standings for the Premier League, La Liga, Bundesliga, Serie A, and Ligue 1 across eleven seasons (2014/15 to 2024/25). From them I calculated two measures of how evenly points are spread across the whole table, and three gaps at the positions where the stakes are highest. For every measure, lower means more competitive.</p>
+        <div class="list">
+          <div><h3>CV of Points</h3><p>Standard deviation of points divided by the mean: how spread out the table is, comparable across leagues.</p></div>
+          <div><h3>Gini Coefficient of Points</h3><p>How unequally points are distributed, borrowed from the way economists measure income inequality.</p></div>
+          <div><h3>Title Race Gap</h3><p>Points between 1st and 2nd.</p></div>
+          <div><h3>UCL Race Gap</h3><p>Points between 4th and 5th: the race for the last Champions League place.</p></div>
+          <div><h3>Relegation Battle Gap</h3><p>Points between the last safe team and the first team in the relegation zone.</p></div>
+        </div>
+      </div>
+      <figure class="wrap-wide" style="margin-top: 48px;">
+        <img src="../images/european-football/code.jpg" alt="R code that loads one CSV per league and season, then computes CV, Gini, and point gaps for each league and season" width="2880" height="1800" loading="lazy">
+        <figcaption>One CSV per league and season is combined into a single table, then each measure is computed per league and season.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Design:</p>
+        <h2>One Question per Chart</h2>
+        <p class="lead">The dashboard has two controls, and both charts update together. The metric dropdown exists because no single measure captures competitiveness, and different readers care about different parts of the table. The season slider supports questions like "which league was most competitive in the last five years?" as well as "over all eleven?", which matters because several trends shift partway through the period.</p>
+        <div class="steps">
+          <div><span class="num">01 Trend</span><p>The line chart is titled as a question ("How has this changed over time?") so the reader knows what to look for.</p></div>
+          <div><span class="num">02 Summary</span><p>The bar chart averages each league over the selected seasons, sorted so the most competitive league sits at the top.</p></div>
+          <div><span class="num">03 Consistent color</span><p>Each league keeps the same color in both charts, so the trend and the average can be read together.</p></div>
+          <div><span class="num">04 Adjustable window</span><p>The slider narrows the range, and the averages are recalculated for that period only.</p></div>
+        </div>
+      </div>
+      <div class="wrap-wide pair">
+        <figure>
+          <img src="../images/european-football/metrics.jpg" alt="Metric dropdown open, listing the five measures" width="2880" height="1624" loading="lazy">
+          <figcaption>Switching between the five measures.</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/european-football/filtered.jpg" alt="Title race gap for 2019/20 to 2022/23, with the Premier League showing the largest average gap" width="2880" height="1624" loading="lazy">
+          <figcaption>Title race gap, narrowed to 2019/20 – 2022/23.</figcaption>
+        </figure>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <p class="label">Process:</p>
-        <h2 class="todo">[Process headline]</h2>
-        <p class="lead todo">[How the insight shaped the design decisions]</p>
-        <div class="pair"><div class="ph">Process image (1)</div><div class="ph">Process image (2)</div></div>
+        <p class="label">Findings:</p>
+        <h2>Competitive at the Top Doesn't Mean Competitive Everywhere</h2>
+        <div class="list">
+          <div><h3>Two measures, one ranking</h3><p>CV and Gini rank the leagues almost identically, which suggests they capture the same underlying dimension of competitiveness.</p></div>
+          <div><h3>Shifting title races</h3><p>In the first half of the period, La Liga had a notably small title gap. Over the last five seasons, the Premier League has had the smallest, as its title race has become more contested.</p></div>
+          <div><h3>A fixed group at the Champions League line</h3><p>La Liga and Ligue 1 have historically had larger gaps between 4th and 5th. Champions League places tend to go to the same group of top clubs rather than being openly contested.</p></div>
+          <div><h3>The Premier League's lopsided bottom</h3><p>The Premier League's relegation gap is far larger than in any other league. Its relegation battles are less tightly contested than they are commonly thought to be.</p></div>
+        </div>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <p class="label">Outcome:</p>
-        <h2 class="todo">[Outcome headline]</h2>
-        <p class="lead todo">[Result, recognition, or what you learned]</p>
-        <div class="ph" style="--ratio: 16 / 9; margin-top: 48px;">Final design</div>
+        <p class="label">Reading the Measures Together:</p>
+        <h2>La Liga's Two Tiers</h2>
+        <p class="lead">No single measure explains La Liga, but together they do. A small title gap, a consistently large gap at the Champions League line, and an overall spread of points that is not extreme point to a two-tier league. The top clubs compete closely among themselves, and the rest of the table is evenly matched below them. The relegation gap supports this: it has stayed small in every season except 2017/18, so the lower half is tightly contested too.</p>
+        <p class="lead" style="margin-top: 16px;">This is why the dashboard offers five measures rather than one. The pattern only appears when they are read side by side.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Reflection:</p>
+        <h2 class="todo">[Reflection headline]</h2>
+        <p class="lead todo">[What you learned, or what you would add next — e.g. links to revenue distribution or financial rules]</p>
       </div>
     </section>
   </main>
