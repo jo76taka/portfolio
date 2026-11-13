@@ -14,8 +14,13 @@
 - Plans a Design graduate degree to develop a personal design philosophy
 
 ## Design philosophy (core message)
-- Fieldwork (interviews, observation) uncovers unmet needs
-- Data science provides scale and validation
+- Design and data science work together in BOTH directions — not "design first, data second":
+  - Design → data: fieldwork (interviews, observation) finds a real issue for a few people;
+    data science shows whether it holds for many
+  - Data → design: data science surfaces patterns/assumptions; fieldwork checks them
+    and finds the why — reaching real issues faster
+  - Goal: find real issues faster and address them more effectively
+- Avoid copy that implies a fixed sequence (e.g., "design finds…, then data proves…")
 - Focus on the structures and root causes behind problems, not just surface solutions
 - Work with existing institutions rather than disrupting them
 - Individual-level and structural-level problems matter equally
@@ -23,8 +28,9 @@
   (e.g., "seamless", "user experience" as the headline)
 
 ## Tagline candidates
-- Hero: "Grounded in people. Proven with data." (leading candidate)
-- Alternatives: "Design beneath the surface." / "Human insight, tested at scale."
+- Hero (decided 2026-11-13): "People and data, read together."
+- Previous / alternatives: "Grounded in people. Proven with data." (dropped: reads one-directional) /
+  "Design beneath the surface." / "Human insight, tested at scale."
 - Avoid "solve" — overclaims for structural problems
 
 ## Featured project: myPOMO
