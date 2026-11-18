@@ -8,17 +8,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://use.typekit.net/qah4mdm.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css?v=20261118f">
 </head>
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Main">
       <a href="../index.html">Home</a>
-      <a href="../about.html">About</a>
       <a href="../projects.html" aria-current="page">Project</a>
+      <a href="../about.html">About</a>
       <a href="../contact.html">Contact</a>
     </nav>
     <div class="page-title">
+      <a class="back" href="../about.html#other-work">← About</a>
       <h1>Selected Visual Work</h1>
       <p class="todo">[One-line summary: what it is and who it is for]</p>
     </div>
@@ -27,57 +28,87 @@
   <main>
     <div class="full-bleed" style="margin: 0;"><div class="ph">Hero image</div></div>
 
+    <!-- 1 · Summary -->
     <section class="section">
       <div class="wrap">
         <p class="statement todo">[Key message of this project in one or two sentences]</p>
-        <ul class="meta">
-          <li>Category: Graphic · Editorial · Photography</li>
-          <li>Role: <span class="todo">[Role]</span></li>
-          <li>Team: <span class="todo">[Team size]</span></li>
-          <li><span class="todo">[Year] · [Tools]</span></li>
-        </ul>
+
+        <div class="summary">
+          <div><p class="label">Problem</p><p><span class="todo">[The problem, for whom]</span></p></div>
+          <div><p class="label">Solution</p><p><span class="todo">[What you made]</span></p></div>
+          <div><p class="label">Outcome</p><p><span class="todo">[Result, recognition, or what changed]</span></p></div>
+        </div>
+
+        <div class="rows facts">
+          <div class="row"><b>Role</b><span><span class="todo">[Role]</span></span></div>
+          <div class="row"><b>Team</b><span><span class="todo">[Team size]</span></span></div>
+          <div class="row"><b>Timeline</b><span><span class="todo">[Year]</span></span></div>
+          <div class="row"><b>Domain</b><span>Graphic · Editorial · Photography</span></div>
+          <div class="row"><b>Methods</b><span><span class="todo">[Methods]</span></span></div>
+          <div class="row"><b>Tools</b><span><span class="todo">[Tools]</span></span></div>
+        </div>
       </div>
     </section>
 
+    <!-- 2 · Problem -->
     <section class="section">
       <div class="wrap">
         <p class="label">The Problem:</p>
-        <h2 class="todo">[Problem headline]</h2>
-        <p class="lead todo">[What was wrong, for whom, and why it matters]</p>
+        <h2><span class="hl"><span class="todo">[Problem headline]</span></span></h2>
+        <p class="lead todo">[What was wrong, for whom, and why it matters, with evidence]</p>
       </div>
     </section>
 
+    <!-- 3 · Insight -->
     <section class="section">
       <div class="wrap">
         <p class="label">Insight:</p>
-        <h2 class="todo">[Insight headline]</h2>
+        <h2><span class="hl"><span class="todo">[Insight headline]</span></span></h2>
         <p class="lead todo">[What research or data revealed]</p>
         <div class="ph" style="--ratio: 16 / 9; margin-top: 48px;">Research / data visual</div>
       </div>
     </section>
 
+    <!-- 4 · Design response -->
     <section class="section">
       <div class="wrap">
-        <p class="label">Process:</p>
-        <h2 class="todo">[Process headline]</h2>
-        <p class="lead todo">[How the insight shaped the design decisions]</p>
-        <div class="pair"><div class="ph">Process image (1)</div><div class="ph">Process image (2)</div></div>
+        <p class="label">Design Response:</p>
+        <h2><span class="hl"><span class="todo">[Response headline]</span></span></h2>
+        <p class="lead todo">[What you designed and how it answers the insight]</p>
+        <div class="ph" style="--ratio: 16 / 9; margin-top: 48px;">Final design</div>
       </div>
     </section>
 
+    <!-- 5 · Process -->
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Process:</p>
+        <h2><span class="hl"><span class="todo">[Process headline]</span></span></h2>
+        <p class="lead todo">[How feedback or testing shaped the design]</p>
+        <div class="pair">
+          <figure><div class="ph">Process image (1)</div></figure>
+          <figure><div class="ph">Process image (2)</div></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · Outcome -->
     <section class="section">
       <div class="wrap">
         <p class="label">Outcome:</p>
-        <h2 class="todo">[Outcome headline]</h2>
-        <p class="lead todo">[Result, recognition, or what you learned]</p>
-        <div class="ph" style="--ratio: 16 / 9; margin-top: 48px;">Final design</div>
+        <h2><span class="hl"><span class="todo">[Outcome headline]</span></span></h2>
+        <div class="list">
+          <div><h3>Result</h3><p class="todo">[Result or recognition]</p></div>
+          <div><h3>What I Learned</h3><p class="todo">[What you learned]</p></div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <span>© 2026 Josuke Takashima</span>
-    <a class="next" href="mypomo.html">Next Project →</a>
+    <a class="next" href="convertible-table.html">Next Project →</a>
   </footer>
+  <script src="../js/nav.js" defer></script>
 </body>
 </html>

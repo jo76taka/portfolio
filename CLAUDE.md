@@ -20,6 +20,9 @@
   - Data → design: data science surfaces patterns/assumptions; fieldwork checks them
     and finds the why — reaching real issues faster
   - Goal: find real issues faster and address them more effectively
+- Roles as Josuke frames them (2026-11-16): design = finding people's real needs in the field
+  (small scale); data science = showing those needs are shared by many people AND using data
+  to form hypotheses that guide the search for needs through design
 - Avoid copy that implies a fixed sequence (e.g., "design finds…, then data proves…")
 - Focus on the structures and root causes behind problems, not just surface solutions
 - Work with existing institutions rather than disrupting them
@@ -35,24 +38,32 @@
 
 ## Featured project: myPOMO
 - Pomodoro-based study/task management app, team project
-- Role: Co-founder / Design & Marketing Lead
-- Pre-beta survey: 818 responses; ran a beta; post-beta feedback compiled into
-  a feature list for the main release
-- Won 1st and 3rd place in national app development competitions:
-  パソコン甲子園 2022 (PC Koshien) — 1st place; アプリ甲子園 2023 (App Koshien) — 3rd place
+- Role (confirmed 2026-11-18): Co-founder / Design & Marketing Lead
+- Pre-beta survey = beta sign-up form: 817 responses. Number of actual beta users is unknown.
+  57 pieces of beta feedback, used to improve the app (ongoing). No "15 design areas / 49 addressed" figures.
+- Award as shown on the site (confirmed 2026-11-17): National Grand Prix, National PC Olympiad 2022
+  (パソコン甲子園 / PC Koshien); 3rd Place, Teen Apps Awards 2023 (アプリ甲子園 — use the English name "Teen Apps Awards")
 - Started 2022. Target users: mainly students who have things they want to work on
   but can't manage their time to take them on; secondarily adults in the same situation
-- Josuke designed the UI/UX himself; feedback analysis was done as the marketing team
+- Josuke leads both the design team (UI/UX design) and the marketing team (pre-beta survey,
+  beta, feedback analysis) (confirmed 2026-11-18)
+- Scheduling inputs (confirmed 2026-11-18): free time, deadlines, estimated time to finish each task, priority
 - Not yet released → no in-app usage data; frame impact through research process
 - Make individual contribution clear without downplaying the team
 
-## Other project candidates (not yet decided which to include)
+## Project selection (decided 2026-11-17)
+- Projects page (in order): myPOMO, Elementals, 77th NADA School Festival
+  (home "Main Projects" shows the same three)
+- Convertible Table and Selected Visual Work live in About → "Other Work", not on the Projects page
+- European Football removed from the site (page/content files kept but unlinked)
+
+## Other project candidates
 - Nada Junior & Senior High School — redesign of the English School Profile in Figma,
   based on reviewer comments
 - Behavioral economics research on anchoring (AI vs. Wikipedia source trust) —
   data visualization (scatterplots, regression, deviation scores in Chart.js)
   and conceptual framing (Bayes' rule, anchoring bias, overconfidence)
-- Shiny dashboard: competitive balance across Top 5 European football leagues
+- (Removed from site 2026-11-17) Shiny dashboard: competitive balance across Top 5 European football leagues
   (Gini coefficient, title race gap). Solo, published Mar 2026; seasons 2014/15–2024/25;
   5 metrics (CV & Gini of points, title / UCL (4th–5th) / relegation gaps);
   metric dropdown + season slider; line plot + cross-league bar chart.
@@ -89,16 +100,26 @@
   Claude-drafted sections. Treat Josuke's own design choices as the reference.
 
 ## Tech stack (decided)
-- Plain HTML/CSS, no build step; font: Futura PT via Adobe Fonts (kit qah4mdm, weights
-  300/400/500 + italics; jo76taka.github.io must be on the kit's allowed domains),
+- Plain HTML/CSS, no build step; font: Futura PT via Adobe Fonts (kit qah4mdm: futura-pt 300–800 + italics,
+  plus futura-pt-condensed 400/700 and futura-pt-bold 700; jo76taka.github.io must be on the kit's allowed domains),
   with Jost (Google Fonts) kept as fallback
 - Hosting: GitHub Pages (account jo76taka)
 - Pages: index / projects / about (incl. skills + interests) / contact, projects/*.html
+- Layout (decided 2026-11-16): 60px left/right page margin on every page (`--gutter`, 20px on phones);
+  nav order Home / Project / About / Contact, fixed at top, #000A15 at 60% once scrolled,
+  hides while scrolling and reappears when scrolling stops (js/nav.js); full-screen home hero
 - `.ph` = image placeholder, `.todo` = highlighted text still to confirm
+- Case study structure (decided 2026-11-18, from DSGN 370 guest panel; myPOMO is the reference):
+  back link (← All projects, or ← About for Other Work) → hero → statement + summary block
+  (Problem / Solution / Outcome + Role, Team, Timeline, Domain, Methods tags, Tools) →
+  Problem (with evidence) → Insight → Design Response → Process → Outcome (Result / What I Learned / Next).
+  Section h2s carry the orange highlight bar (`<h2><span class="hl">`); case study headers are shortened.
+- Project content lives in `content/` as Markdown (source of truth for message + copy;
+  HTML in `projects/` is the presentation). Each page starts from a one-sentence message;
+  section headings make claims and should convey the message on their own.
 
 ## To decide
 - Visual direction (draft exists in Figma; not final)
-- Final project selection and order
 - Contact info and links
 
 ## Working with Claude

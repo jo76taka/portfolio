@@ -9,51 +9,60 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://use.typekit.net/qah4mdm.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20261118f">
 </head>
 <body>
   <header class="hero">
     <nav class="nav" aria-label="Main">
       <a href="index.html" aria-current="page">Home</a>
-      <a href="about.html">About</a>
       <a href="projects.html">Project</a>
+      <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <div class="hero-photo" role="img" aria-label="Portrait of Josuke Takashima"></div>
-    <p class="hero-tagline">People and data,<br>read together.</p>
+    <div class="hero-photo">
+      <img src="images/hero-portrait.png" alt="Portrait of Josuke Takashima" width="1084" height="1623">
+    </div>
+    <p class="hero-tagline">
+      <span class="hl hl-1">People and data,</span>
+      <span class="hl hl-2">read together.</span>
+    </p>
     <h1 class="hero-name">Josuke<br>Takashima</h1>
   </header>
 
   <main>
-    <section class="section">
+    <section class="section home-philosophy">
       <div class="wrap-wide">
-        <p class="label">Selected Projects:</p>
-        <div class="grid" style="margin-top: 24px;">
+        <p class="label label-hl">Design Philosophy:</p>
+        <p class="statement"><strong>Design</strong> <span class="accent">finds people’s real needs</span> in the field, up close with a few people.<br>
+          <strong>Data science</strong> shows <span class="accent">how many people share those needs</span>,<br>
+          and <span class="accent">shapes the hypotheses</span> I take into the field.<br>
+          Each makes the other sharper, so <span class="accent">real issues surface faster</span>.<br>
+          I look past individual problems to the <span class="accent">structures that create them</span>.</p>
+        <a class="more" href="about.html">More about me →</a>
+      </div>
+    </section>
+
+    <section class="section home-projects">
+      <div class="wrap-wide">
+        <p class="label label-hl">Main Projects:</p>
+        <div class="grid grid-home" style="margin-top: 24px;">
           <a class="card" href="projects/mypomo.html">
             <img src="images/mypomo/cover.jpg" alt="myPOMO app screens">
             <h3>myPOMO</h3>
             <p>Product &amp; UX · Data</p>
           </a>
-          <a class="card" href="projects/european-football.html">
-            <img src="images/european-football/overview.jpg" alt="European football competitiveness dashboard">
-            <h3>European Football Competitiveness</h3>
-            <p>Data · Information Design</p>
-          </a>
           <a class="card" href="projects/elementals.html">
-            <img src="images/elementals/screens.jpg" alt="Elementals app screens">
+            <img src="images/elementals/cover.jpg?v=2" alt="Three Elementals app screens: locked scent, gallery, and special edition">
             <h3>Elementals (L'Oréal Brandstorm)</h3>
             <p>Service Design</p>
           </a>
+          <a class="card" href="projects/nada-school-festival.html">
+            <img src="images/nada/cover.jpg" alt="Two 77th NADA School Festival social media posts: 6 DAYS countdown and DAY 1 START!!">
+            <h3>77th NADA School Festival</h3>
+            <p>Graphic Design</p>
+          </a>
         </div>
         <a class="more" href="projects.html">View all projects →</a>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap-wide">
-        <p class="label">Design Philosophy:</p>
-        <p class="statement">Design and data science work in both directions. Talking with a few people reveals a real issue, and data shows how many people share it. Data reveals a pattern, and talking with people explains why. Together they get to the real issue faster. I look past individual problems to the structures that create them.</p>
-        <a class="more" href="about.html">More about me →</a>
       </div>
     </section>
   </main>
@@ -61,10 +70,11 @@
   <footer class="site-footer">
     <span>© 2026 Josuke Takashima</span>
     <span>
-      <a href="https://www.linkedin.com/in/josuke-takashima">LinkedIn</a> ·
-      <a href="https://www.instagram.com/jotaka_camera">Instagram</a> ·
+      <a href="https://www.linkedin.com/in/josuke-takashima" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a href="https://www.instagram.com/jotaka_camera" target="_blank" rel="noopener">Instagram</a> ·
       <a href="mailto:JosukeTakashima2028@u.northwestern.edu">Email</a>
     </span>
   </footer>
+  <script src="js/nav.js" defer></script>
 </body>
 </html>

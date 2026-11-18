@@ -8,14 +8,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://use.typekit.net/qah4mdm.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20261118f">
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header site-header--compact">
     <nav class="nav" aria-label="Main">
       <a href="index.html">Home</a>
-      <a href="about.html" aria-current="page">About</a>
       <a href="projects.html">Project</a>
+      <a href="about.html" aria-current="page">About</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="page-title">
@@ -26,7 +26,7 @@
   <main>
     <section class="section">
       <div class="wrap bio">
-        <div class="ph">Portrait</div>
+        <img class="bio-photo" src="images/about-portrait.jpg" alt="Josuke Takashima, smiling with arms crossed, in a stone archway">
         <div>
           <p class="label">About:</p>
           <h2>Hi, I&rsquo;m Josuke Takashima!</h2>
@@ -69,6 +69,24 @@
       </div>
     </section>
 
+    <section class="section" id="other-work">
+      <div class="wrap">
+        <p class="label">Other Work:</p>
+        <div class="grid" style="margin-top: 24px;">
+          <a class="card" href="projects/convertible-table.html">
+            <div class="ph">Convertible Table cover</div>
+            <h3>Convertible Table</h3>
+            <p>Product Design</p>
+          </a>
+          <a class="card" href="projects/visual-work.html">
+            <div class="ph">Selected Visual Work cover</div>
+            <h3>Selected Visual Work</h3>
+            <p>Graphic · Editorial · Photography</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="interests">
       <div class="wrap">
         <p class="label">Outside of Work:</p>
@@ -90,10 +108,11 @@
   <footer class="site-footer">
     <span>© 2026 Josuke Takashima</span>
     <span>
-      <a href="https://www.linkedin.com/in/josuke-takashima">LinkedIn</a> ·
-      <a href="https://www.instagram.com/jotaka_camera">Instagram</a> ·
+      <a href="https://www.linkedin.com/in/josuke-takashima" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a href="https://www.instagram.com/jotaka_camera" target="_blank" rel="noopener">Instagram</a> ·
       <a href="mailto:JosukeTakashima2028@u.northwestern.edu">Email</a>
     </span>
   </footer>
+  <script src="js/nav.js" defer></script>
 </body>
 </html>
